@@ -1,0 +1,70 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scriptum</title>
+    <script src="jszip.min.js"></script>
+    <script src="epub.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./themes.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <!--
+    <div id="titlebar">
+      <div id="menubar"></div>
+      <div id="title"></div>
+      <div id="buttons">
+        <button>Close</button>
+      </div>
+    </div>
+    -->
+    <div id="backdrop" onclick="hideMenus()"></div>
+
+    <div id="toolbar" class="appbar">
+      <button class="icon material-icons" id="show-toc" disabled>menu</button>
+      <button class="icon material-icons" id="overflow-menu-button">more_vert</button>
+    </div>
+
+    <div id="overflow-menu" class="menu">
+      <div class="item" id="menu-open">Open</div>
+      <div class="item" id="menu-themes">
+        <div>Themes</div>
+        <div class="material-icons">chevron_right</div>
+      </div>
+      <div class="item" id="menu-quit">Quit</div>
+    </div>
+
+    <div id="themes-menu" class="menu">
+      <div class="header">
+        <button class="flat icon material-icons" id="themes-menu-back">arrow_back</button> 
+        <div>Themes</div>
+      </div>
+    </div>
+
+    <div id="drop-area">
+      <h1 id="drop-box">
+        Drop a file here to open
+      </h1>
+    </div>
+
+    <div id="reader">
+      <div id="sidebar" class="navbar">
+        <div id="toc" class="treeview"></div>
+      </div>
+  
+      <div id="viewer-container">
+        <div class="viewer-header">M</div>
+        <div class="viewer-header">M</div>
+        <div id="viewer"></div>
+        <div class="viewer-footer">M</div>
+        <div class="viewer-footer">M</div>
+
+        <button class="icon material-icons" id="prev">chevron_left</button>
+        <button class="icon material-icons" id="next">chevron_right</button>
+      </div>
+    </div>
+    
+    <script src="./renderer.js"></script>
+  </body>
+</html>

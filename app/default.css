@@ -1,0 +1,19 @@
+h1 {
+	margin: 0 0 1em 0;
+	text-align: center;
+}
+
+h2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+	margin: 0;
+	text-align: center;
+}
+
+p {
+	text-indent: 2em;
+	margin: 0 0 1em 0;
+	text-align: justify;
+}

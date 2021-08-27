@@ -1,0 +1,17 @@
+{
+	"appId": "com.epmiranda.scriptum",
+    "productName": "Scriptum",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+	"directories": {
+        "app": ".",
+        "buildResources": "build"
+    },
+	"files": [
+        "package.json",
+        "app/**/*",
+        "node_modules",
+		"!README.md"
+    ]
+}
