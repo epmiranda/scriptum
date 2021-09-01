@@ -114,6 +114,7 @@ function addTocItem(toc) {
   const label = document.createElement('div');
   label.className = 'label';
   label.innerHTML = toc.label;
+  label.title = toc.label;
   item.appendChild(label);
 
   if(toc.subitems.length > 0) {
